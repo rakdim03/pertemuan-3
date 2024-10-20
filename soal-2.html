@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .item {
+            background-color: rgb(255, 56, 56);
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        .item:nth-child(2) {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">One</div>
+        <div class="item">Two</div>
+        <div class="item">Three</div>
+        <div class="item">Four</div>
+    </div>
+</body>
+</html>

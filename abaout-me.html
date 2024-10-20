@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-bottom: 20px;
+        }
+        .bio {
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .profile-image {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .bio {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bio">
+            <h2>Rakhadimas Naufal Ahyan</h2>
+            <p>Hello my name is Rakhadimas Naufal Ahyan, I am a student of UIN Syarif Hidaytullah Jakarta, Faculty of Science and Technology in the Department of Information Systems</p>
+        </div>
+    </div>
+</body>
+</html>
